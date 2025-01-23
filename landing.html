@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/landing css/style.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="Form page" href="./app.html">
      <title>Welcome to Operation Furbaby</title>
 </head>
 
@@ -22,48 +25,56 @@
             <p>Operation Furbaby: Mission Pawsible — Uniting hearts and paws on covert rescue missions to deliver love and joy, one furbaby at a time</p>
         </article>
 
-        <section>
-            <div>
-                <h5>Agent Fernando</h5>
-                <img src="./Assets/cat-1.jpg" alt="white kitten with light stipes">
-                <div class="description"></div>
-                <button>Adopt me!</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptate impedit sit blanditiis possimus laborum, tenetur esse laboriosam aliquid maiores, tempore quas. Ratione reiciendis expedita sit tempora at fuga beatae.</p>
-            </div>
-            <div>
-                <h4>Agent Bigsby</h4>
-                <img src="./Assets/dog-1.jpg" alt="gold colored puppy">
-                <div class="description"></div>
-                <button>Adopt me!</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel et, ut magnam pariatur reiciendis? Tempore mollitia vero aliquid. Incidunt illo optio doloribus voluptatum recusandae pariatur dicta ex ipsum doloremque.</p>
-            </div>
-            <div>
-                <h4>Agent Clementine</h4>
-                <img src="./Assets/cat-2.jpg" alt="orange tabby kitten">
-                <div class="description"></div>
-                <button>Adopt me!</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo voluptatibus rerum, deleniti saepe eum et, in ipsa quam, nesciunt iusto quia. Impedit blanditiis consequuntur mollitia qui ratione excepturi cumque.</p>
-            </div>
-            <div>
-                <h4>Agent Ein</h4>
-                <img src="./Assets/dog-2.jpg" alt="happy corgi">
-                <div class="description"></div>
-                <button>Adopt me!</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum repellat adipisci vitae assumenda rerum itaque temporibus ullam provident reiciendis aliquam quas quibusdam ab, quia aspernatur porro placeat eius. Voluptate!</p>
-            </div>
-            <div>
-                <h4>Agent Natasha</h4>
-                <img src="./Assets/cat-3.jpg" alt="black cat relaxing">
-                <div class="description"></div>
-                <button>Adopt me!</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, deserunt laboriosam sapiente commodi sit doloribus vel repudiandae voluptatum, laudantium soluta totam hic quam ex quo obcaecati illum quasi explicabo. Aut.</p>
-            </div>
-            <div>
-                <h4>Agent Curly</h4>
-                <img src="./Assets/dog-3.jpg" alt="happy pug">
-                <div class="description"></div>
-                <button>Adopt me!</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate sed culpa. Culpa doloribus, voluptas veritatis amet consequuntur sapiente, deserunt ducimus modi repellat cupiditate aspernatur, facilis nobis dolores aliquid saepe!</p>
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-4 pt-5">
+                    <h4 class="pb-3">Agent Fernando</h4>
+                    <div class="pet-container">
+                        <img class="img-effect card-img-top img-fluid img-control" src="./Assets/cat-1.jpg" alt="white kitten with light stipes">
+                    </div>
+                    <a class="btn btn-primary w-100 custom-btn" href="./app.html" style="text-decoration: none;">Adopt me!</a>
+                    <p class="hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptate impedit sit blanditiis possimus laborum, tenetur esse laboriosam aliquid maiores, tempore quas. Ratione reiciendis expedita sit tempora at fuga beatae.</p>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <h4 class="pb-3">Agent Bigsby</h4>
+                    <div class="pet-container">
+                        <img class="card-img-top img-fluid" src="./Assets/dog-1.jpg" alt="gold colored puppy">
+                    </div>
+                    <a class="btn btn-primary w-100 custom-btn" href="./app.html" style="text-decoration: none;">Adopt me!</a>
+                    <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel et, ut magnam pariatur reiciendis? Tempore mollitia vero aliquid. Incidunt illo optio doloribus voluptatum recusandae pariatur dicta ex ipsum doloremque.</p>
+                </div>
+                <div class="col-sm pt-5">
+                    <h4 class="pb-3">Agent Clementine</h4>
+                    <div class="pet-container">
+                        <img class="card-img-top img-fluid" src="./Assets/cat-2.jpg" alt="orange tabby kitten">
+                    </div>
+                    <a class="btn btn-primary w-100 custom-btn" href="./app.html" style="text-decoration: none;">Adopt me!</a>
+                    <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo voluptatibus rerum, deleniti saepe eum et, in ipsa quam, nesciunt iusto quia. Impedit blanditiis consequuntur mollitia qui ratione excepturi cumque.</p>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <h4 class="pb-3">Agent Ein</h4>
+                    <div class="pet-container">
+                        <img class="card-img-top img-fluid" src="./Assets/dog-2.jpg" alt="happy corgi">
+                    </div>
+                    <a class="btn btn-primary w-100 custom-btn" href="./app.html" style="text-decoration: none;">Adopt me!</a>
+                    <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum repellat adipisci vitae assumenda rerum itaque temporibus ullam provident reiciendis aliquam quas quibusdam ab, quia aspernatur porro placeat eius. Voluptate!</p>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <h4 class="pb-3">Agent Natasha</h4>
+                    <div class="pet-container">
+                        <img class="card-img-top img-fluid img-control" src="./Assets/cat-3.jpg" alt="black cat relaxing">
+                    </div>
+                    <a class="btn btn-primary w-100 custom-btn" href="./app.html" style="text-decoration: none;">Adopt me!</a>
+                    <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, deserunt laboriosam sapiente commodi sit doloribus vel repudiandae voluptatum, laudantium soluta totam hic quam ex quo obcaecati illum quasi explicabo. Aut.</p>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <h4 class="pb-3">Agent Curly</h4>
+                    <div class="pet-container">
+                        <img class="card-img-top img-fluid" src="./Assets/dog-3.jpg" alt="happy pug">
+                    </div>
+                    <a class="btn btn-primary w-100 custom-btn" href="./app.html" style="text-decoration: none;">Adopt me!</a>
+                    <p class="hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate sed culpa. Culpa doloribus, voluptas veritatis amet consequuntur sapiente, deserunt ducimus modi repellat cupiditate aspernatur, facilis nobis dolores aliquid saepe!</p>
+                </div>
             </div>
         </section>
         
