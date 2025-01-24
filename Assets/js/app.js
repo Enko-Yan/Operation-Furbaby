@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (savedData) {
         const applicationData = JSON.parse(savedData);
         
-       
+
            document.getElementById("first-name").value = applicationData.firstname || '';
            document.getElementById("last-name").value = applicationData.lastname || '';
            document.getElementById("email").value = applicationData.email || '';
@@ -15,9 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
    });
         
 document.getElementById("applicationForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
 
-    
+    event.preventDefault(); 
     const firstname = document.getElementById("first-name").value;
     const lastname = document.getElementById("last-name").value;
     const email = document.getElementById("email").value;
@@ -27,8 +26,6 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
     
     const interest = document.getElementById("interest").value;
 
-
-    
     const applicationData = {
         firstname: firstname,
         lastname: lastname,
@@ -41,15 +38,17 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
     localStorage.setItem("applicationData", JSON.stringify(applicationData));
     
 
+
     
     showModal();
 });
-
 
 function showModal() {
     const modal = document.getElementById("modal");
     modal.style.display = "block";
 }
+
+
 
 
 document.getElementById("closeModal").addEventListener("click", function() {
