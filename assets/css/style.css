@@ -1,4 +1,33 @@
+header{
+  font-family: 'Spy Agency Laser Italic', sans-serif;
+}
+
 body {
-    background-color: #80d1e5;
+
+  font-family:'Spy Agency', sans-serif;
+  font-size: larger;
+  background-color: #2A2A2A;
+    color: #BDBDBD ;
+    .form-control {
+      font-size: smaller;
+      background-color: #1d1d1c;
+      border: 1px solid #211217; 
+      color: #BDBDBD; 
+}
+
+    .custom-btn {
+        background-color: #0d1a26;
+        color: #BDBDBD ;
+    }
+
+    .custom2 {
+      background-color: #000000;
+      color: #BDBDBD ;
   }
-  
+
+.modal-content{
+  background-color: #1d1d1c;
+}
+h1{font-size: 60px;
+font-weight: thick;}
+}
