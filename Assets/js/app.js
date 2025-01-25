@@ -32,7 +32,8 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
         email: email,
         phone: phone,
         address: address,
-        state: state
+        state: state,
+        interest: interest
     };
 
     localStorage.setItem("applicationData", JSON.stringify(applicationData));
