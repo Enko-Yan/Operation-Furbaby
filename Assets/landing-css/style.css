@@ -43,11 +43,6 @@ hr.new1 {
   }
   
 
-
-.hidden {
-    display: none;
-}
-
 .img-control {
     width: 100%;
     height: 232.9px;
@@ -61,12 +56,12 @@ hr.new1 {
 
 .pet-container {
     
-    border: 10px solid #bcb9c08e;
+    border: 10px solid #bcb9c0ad;
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 15px;
-    background-color: #030c2b;
-    box-shadow: 10px 5px 5px blueviolet;
+    background-color: black;
+    box-shadow: 10px 5px 5px white;
 }
 
 .hover-text {
