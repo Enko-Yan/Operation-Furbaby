@@ -65,12 +65,16 @@ function showConfirmationModal () {
     confirmationModal.style.display = "block";
 }
 
+const formSubmission = document.getElementById("applicationForm")
+
 document.getElementById("confirmSubmit").addEventListener("click", function () {
     const confirmationModal = document.getElementById("confirmationModal");
     confirmationModal.style.display = "none";
 
     const successModal = document.getElementById("modal");
     successModal.style.display = "block";
+    
+    formSubmission.reset();
 
 });
 
