@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Application Site</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/spy-agency" rel="stylesheet">
+</head>
+
+<body>
+<header class="text-center">
+  <h1> 
+    <img src="./Assets/adoption-agency.png" alt="Cat shape in a house outline">
+Operation Furbaby Application
+</h1>
+</header>
+
+<div class="text-center">
+    <h2>Please fill out this form</h2>
+</div>
+
+<div class="d-flex justify-content-center align-items-center vh-100 ">
+
+<form id= "applicationForm" method="POST">
+    <div class="input-group pl-2">
+        <label for="first-name">First Name</label>
+        <input type="text" class="form-control" name="first-name" id="first-name" placeholder="Bob">
+    </div>
+    <div class="input-group pl-2">
+        <label for="last-name">Last Name</label>
+        <input type="text" class="form-control" name="last-name" id="last-name" placeholder="Ross">
+    </div>
+    <div class="input-group pl-2">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="bobross@ross.com">
+    </div>
+    <div class="input-group pl-2">
+        <label for="household">How many are in your household?</label>
+        <input type="number" class="form-control" name="household" id="household" placeholder="0" >
+    </div>
+    <div class="input-group pl-2">
+        <label for="phone">What is your Phone Number?</label>
+        <input type="tel" class="form-control" name="phone" id="phone" placeholder="123-456-7890" >
+    </div>
+    <div class="input-group pl-2">
+        <label for="address">What is your street address?</label>
+        <input type="text" class="form-control" name="address" id="address" placeholder="123 Art Street">
+    </div>
+    <div class="input-group pl-2">
+        <label for="state">What is your City and State?</label>
+        <input type="text" class="form-control" name="state" id="state" placeholder="Hometown, NY">
+    </div>
+    <div class="input-group pl-2">
+        Please check one.
+        <label for="cat">Cat?</label>
+        <input type="checkbox"  name="cat"  id="cat" >
+        <label for="dog">Dog?</label>
+        <input type="checkbox" name="dog" id="dog" >
+    </div>
+    <div class="input-group pl-2">
+        <label for="interest">Which pet are you interested in?</label>
+        <input type="text" class="form-control" name="interest" id="interest" placeholder="felix">
+    </div>
+    <button id="submit"class="btn custom-btn w-100">Submit Application</button>
+</form>
+</div>
+
+<div class="d-flex justify-content-center align-items-center">
+    <button type="button" class="btn custom2" onclick="window.location.href='landing.html'">Return</button>
+</div>
+
+<div id="confirmationModal" class="modal">
+    <div class="modal-dialog modal-md rounded-lg">
+        <div class="modal-content rounded-lg">
+            <span class="close-btn cursor" id="closeConfirmationModal">Close</span>
+            <div class="modal-header justify-content-center text-center">
+                <h2>Is this information correct?</h2>
+            </div>
+        </div>
+        <div class="modal-body text-center modal-content">
+            <p><strong>First Name:</strong> <span id="confirm-first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="confirm-last-name"></span></p>
+            <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+            <p><strong>Phone:</strong> <span id="confirm-phone"></span></p>
+            <p><strong>Address:</strong> <span id="confirm-address"></span></p>
+            <p><strong>State:</strong> <span id="confirm-state"></span></p>
+            <p><strong>Pet of interest</strong> <span id="confirm-interest"></span></p>
+            <button id="confirmSubmit" class="btn custom-btn">Confirm</button>
+            <button id="cancel" class="btn custom btn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-dialog modal-md rounded-lg">
+        <div class="modal-content rounded-lg">
+            <span class="close-btn cursor" id="closeModal">Close</span>
+            <div class="modal-header justify-content-center text-center">
+                <h2>Application Submitted</h2>
+            </div>
+            <div class="modal-body text-center">
+                <p>Your application has been successfully submitted!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./Assets/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
